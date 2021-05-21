@@ -22,7 +22,7 @@ body{
 }
 .bodyText{
 	text-align: center;
-	font-family: cursive;
+	font-family:monospace;
 	color: white;
 }
 
@@ -132,9 +132,7 @@ body{
 	text-decoration: underline;
 	color: blue;
 }
-#footer i{
-	font-size: 50px;
-}
+
 .subscribe {
 	padding:0.1px 10px;
 	background-color: #800000;
@@ -153,6 +151,8 @@ body{
 	border: none;
 	background:transparent;
 	margin-left: 0px;
+	margin-bottom: 0px;
+    margin-top: 0px;
 }
 .subscribe .form-control :focus{
 	box-shadow: : none;
@@ -166,14 +166,35 @@ body{
 	font-size: 20px;
 }
 .formBtn{
-	border-radius: 30px; 
-    padding: 1px 4px;
+	margin-top: 2px;
+
+	padding:4px 10px;
+	background-color: #800000;
+	position: relative;
+	border-radius: 10px;
+	color: #fff;
+	justify-content: center;
+	text-align: center;
 }
-.formBtn p{
+.formBtn button{
+	border-radius: 20px;
+}
+.formBtn button:hover{
+	border-radius: 20px;
+	background-color: #f91212;
+	border:2px solid white;
+	color:white;
+	transform: scale(1.1);
+	transition: .5s ease background-color;
+
+}
+
+#footer i{
+	font-size: 50px;
 	align-items: center;
-	margin-top: 9px;
-	margin-left: 0px;
-	margin-right: 0px;
+}
+#footer .allIcons{
+	text-align: center;
 }
 
 /*  Work  */
@@ -314,4 +335,26 @@ body{
 	margin:0px 0px 0px 0px;
 }
 
+
+
 }
+
+/*   Form Elements     */
+<!-----Form----->
+<form action="">
+ <section id="subscribe mb-4">
+  <div class="footContainer">
+    <div class="subscribe text-center">  
+      <div class="input-group">
+        <input type="email" class="form-control" name="email" placeholder="Email">
+      </div>
+      <div class="input-group">
+        <input type="text" class="form-control" name="yourName" placeholder="Full Name">
+      </div>
+  </div>  
+  <div class="formBtn">
+        <button class="specialBtn">Submit</button>
+      </div>
+    </div>
+</section> 
+</form> 
