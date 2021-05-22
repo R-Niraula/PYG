@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!--------Scroll animation-------->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,12 +24,12 @@
  <div class="navDiv">
     <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="logo.png"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#"><img data-aos="fade-down-left" src="logo.png"></a>
+   <button data-aos="fade-down-left" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul data-aos="fade-down-left" class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.html">Home</a>
         </li>
@@ -52,56 +55,59 @@
 
   <!------Gallery----->
   <div class="imgWrapper">
-   <span>Gallery</span>
+   <span data-aos="fade-down">Gallery</span>
   </div>
   <div class="gallery">
-    <div class="image"><span><a href="download.jpg" target="_blank"><img src="download.jpg"></a></span></div>
-    <div class="image"><span><a href="download1.jpg" target="_blank"><img src="download1.jpg"></a></span></div>
-    <div class="image"><span><a href="download2.jpg" target="_blank"><img src="download2.jpg"></a></span></div>
-    <div class="image"><span><a href="download3.jpg" target="_blank"><img src="download3.jpg"></a></span></div>
-    <div class="image"><span><a href="download4.jpg" target="_blank"><img src="download4.jpg"></a></span></div>
-    <div class="image"><span><a href="download5.jpg" target="_blank"><img src="download5.jpg"></a></span></div>
+    <div data-aos="fade-up" class="image"><span><a href="download.jpg" target="_blank"><img src="download.jpg"></a></span></div>
+    <div data-aos="fade-up" class="image"><span><a href="download1.jpg" target="_blank"><img src="download1.jpg"></a></span></div>
+    <div data-aos="fade-up" class="image"><span><a href="download2.jpg" target="_blank"><img src="download2.jpg"></a></span></div>
+    <div data-aos="fade-up" class="image"><span><a href="download3.jpg" target="_blank"><img src="download3.jpg"></a></span></div>
+    <div data-aos="fade-up" class="image"><span><a href="download4.jpg" target="_blank"><img src="download4.jpg"></a></span></div>
+    <div data-aos="fade-up" class="image"><span><a href="download5.jpg" target="_blank"><img src="download5.jpg"></a></span></div>
   </div>
 
 <!----Footer----->
-<footer id="contact">
+<footer id="contact" >
    
 <section id="footer">
   <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div data-aos="fade-up" class="col-md-6">
           <img src="itsraining.jpg" class="footer-logo"> 
         </div>
-        <div class="col-md-6">
+        <div data-aos="fade-up" class="col-md-6">
           <h1 class="mb-4">Contact</h1>
         <!-----Form----->
 <form action="backEnd.php">
  <section id="subscribe mb-4">
   <div class="footContainer">
-    <div class="subscribe text-center">  
-      <div class="input-group">
+    <div class="subscribe text-center"> 
+    
+      <div data-aos="fade-up" class="input-group">
         <input type="text" class="form-control" name="name" placeholder="Full Name">
       </div>
-      <div class="input-group">
+      <div data-aos="fade-up" class="input-group">
         <input type="email" class="form-control" name="email" placeholder="Email">
       </div>
+     
   </div>  
-  <div class="formBtn">
+  <div data-aos="fade-up" class="formBtn">
         <button name="submit" class="specialBtn">Submit</button>
       </div>
     </div>
 </section> 
 </form> 
-        <div class="allIcons mt-4">
+        <div data-aos="fade-up" class="allIcons mt-4">
          <a href="tel:+977 9869290489"><i id="call" class="fas fa-phone-square-alt"></i></a> <br><br>
          <a href="https://www.facebook.com/search/top?q=purwatole%20youth%20group" target="_blank"><i class="fab fa-facebook-square"></i></a>
         </div>
-          <p class="mt-4 mb-0">Location&nbsp;<span id="location" class="far fa-compass"></</span></p>
+          <p data-aos="fade-up" class="mt-4 mb-0">Location&nbsp;<span id="location" class="far fa-compass"></</span></p>
           <h6 class="city mt-0">Inaruwa-1, Purwatole, Nepal</h6>
         </div>
     </div>  
  <div class="hrtag"><hr></div>
  <p class="copyright">&copy; Purwatole Youth Group | Developer :<a href="https://www.facebook.com/ravi.niraula.9/" target="_blank" class="myLink"> Rhythm Niraula</a></p>
+ 
   </div>
 
  </footer>
@@ -119,5 +125,14 @@
     <script>
     baguetteBox.run('.tz-gallery');
 </script>
+<!----------Scroll animation------------>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+       offset: 150,
+       duration: 800,
+    });
+  </script>
+
   </body>
 </html>

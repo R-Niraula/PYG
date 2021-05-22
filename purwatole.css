@@ -196,6 +196,14 @@ body{
 #footer .allIcons{
 	text-align: center;
 }
+.imgDiv{
+	justify-content: center;
+	text-align: center;
+}
+.imgDiv img{
+	width: 130px;
+	height: 150px;
+}
 
 /*  Work  */
 .workContainer{
@@ -244,6 +252,8 @@ body{
 .gallery{
 	display: flex;
 	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
 }
 .gallery .image{
 	padding: 2px;
@@ -339,22 +349,3 @@ body{
 
 }
 
-/*   Form Elements     */
-<!-----Form----->
-<form action="">
- <section id="subscribe mb-4">
-  <div class="footContainer">
-    <div class="subscribe text-center">  
-      <div class="input-group">
-        <input type="email" class="form-control" name="email" placeholder="Email">
-      </div>
-      <div class="input-group">
-        <input type="text" class="form-control" name="yourName" placeholder="Full Name">
-      </div>
-  </div>  
-  <div class="formBtn">
-        <button class="specialBtn">Submit</button>
-      </div>
-    </div>
-</section> 
-</form> 
