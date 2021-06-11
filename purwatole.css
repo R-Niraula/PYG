@@ -153,6 +153,9 @@ body{
 	padding: 6px;
 	max-width: 500px;
 }
+.input-group textarea{
+	width:100%;
+}
 .subscribe .form-control{
 	border: none;
 	background:transparent;
@@ -161,7 +164,7 @@ body{
     margin-top: 0px;
 }
 .subscribe .form-control :focus{
-	box-shadow: : none;
+	box-shadow: none;
 	background:transparent;
 }
 
